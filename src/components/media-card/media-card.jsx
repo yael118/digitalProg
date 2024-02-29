@@ -6,6 +6,7 @@ import israelImg from '../../images/israelPng.jpg';
 import './media-card.css';
 import Microphone from '../microphone/microphone';
 import { MainContext } from "../main/main.js";
+import { Image } from 'react-bootstrap';
 
 export default function MediaCard({ personDetails }) {
   const [participant, setparticipant] = useState(personDetails);
@@ -17,11 +18,8 @@ export default function MediaCard({ personDetails }) {
 
   return (
     <Card id={'card' + participant.userId} className='card'>
-      <CardMedia
-        className="media"
-        component="img"
-        image={participant.videoState ? participant.imgUrl : require('C:\\Users\\yael\\Documents\\digital-prog\\src\\images\\empty.jpg')}
-        title={participant.fullName}></CardMedia>
+      <img className="media" src={participant.videoState ? participant.imgUrl : "https://cdn.pixabay.com/photo/2018/07/02/21/29/daylily-3512540_1280.jpg"}></img>
+
       <div className='top-tag'>
         <Button style={{ backgroundColor: participant.userId == data.currUser.id ? 'rgb(25, 118, 210)' : 'white', color: participant.userId == data.currUser.id ? 'white' : 'rgb(25, 118, 210)' }}>
           <label className='bl' style={{ color: participant.userId == data.currUser.id ? "#ffffff" : "rgb(25, 118, 210)" }}>{participant.userId == data.currUser.id ? 'אני- ' : ''}{participant.audioState ? 'דובר' : (participant.isJudge == true ? `${participant.position}` : 'צד ' + `${participant.position}`)}</label>
