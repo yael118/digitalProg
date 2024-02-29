@@ -1,0 +1,10 @@
+
+.stopwatch-container{
+    display: inline-block;
+    margin: 0.625rem;
+}
+.stopwatch-time {
+    text-align: center;
+    color: #fff;
+    font-size: 0.9375em;
+}

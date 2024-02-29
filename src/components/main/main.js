@@ -1,0 +1,96 @@
+import { React, createContext } from 'react'
+import './main.css'
+import Navbar from '../navbar/navbar';
+import Discussion from '../discussion/discussion';
+export const MainContext = createContext();
+const data = {
+    participants : [
+    {
+        position: 'משיב',
+        userId: 456,
+        description: 'עורך דין',
+        fullName: 'לוי יצחק המתוק',
+        videoState: true,
+        audioState: false,
+        isJudge: false,
+        imgUrl: require('C:\\Users\\yael\\Documents\\digital-prog\\src\\images\\IMG_2253.jpg')
+    },
+    {
+        position: 'משיב',
+        userId: 741,
+        description: '',
+        fullName: 'לוי יצחק קליין',
+        videoState: false,
+        audioState: false,
+        isJudge: false,
+        imgUrl: require('C:\\Users\\yael\\Documents\\digital-prog\\src\\images\\IMG_2253.jpg')
+    }
+    ,
+    ,{
+        position: 'עורר',
+        userId: 123,
+        description: 'עורך דין',
+        fullName: 'נעמי החמודה',
+        videoState: true,
+        audioState: false,
+        isJudge: false,
+        imgUrl: require('C:\\Users\\yael\\Documents\\digital-prog\\src\\images\\IMG_4116.jpg')
+    },{
+        position: 'עורר',
+        userId: 321,
+        description: 'עורך דין',
+        fullName: 'נעמי קליין',
+        videoState: true,
+        audioState: true,
+        isJudge: false,
+        imgUrl: require('C:\\Users\\yael\\Documents\\digital-prog\\src\\images\\IMG_3410.jpg')
+    },
+    {
+        position: 'שופט',
+        userId: 789,
+        description: 'כבוד השופט',
+        fullName: 'צבי קליין',
+        videoState: true,
+        audioState: true,
+        isJudge: true,
+        imgUrl: require('C:\\Users\\yael\\Documents\\digital-prog\\src\\images\\IMG_3410.jpg')
+    }
+    /*,{
+        position: 'שופט',
+        userId: 987,
+        description: 'כבוד השופטת',
+        fullName: 'יעל קליין',
+        videoState: true,
+        audioState: false,
+        isJudge: true,
+        imgUrl: require('C:\\Users\\yael\\Documents\\digital-prog\\src\\images\\IMG_3571.jpg')
+    }*/
+
+],
+currUser : {
+    id : 123,
+    fullName : "יעל קליין"
+  },
+  disDetails : {
+    sourceSys: "משרד המשפטים",
+    comitteeName: "ועדת ערר לעניני קורנה",
+    disDescription: "השתתפות בהוצאות קבועות",
+    courtCase: {
+        id: '123456',
+        month: '02',
+        year: '2022'
+    }
+}
+}
+
+export default function Main() {
+  
+    return ( 
+        <MainContext.Provider value={data}>
+        <div id="main">
+            <Navbar></Navbar>
+            <Discussion></Discussion>
+        </div>
+        </MainContext.Provider>
+);
+}

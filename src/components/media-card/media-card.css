@@ -1,0 +1,62 @@
+
+ .card{
+    position: relative !important;
+    margin:0.625rem;
+    margin-block:0.935rem;
+   flex: 1 1 auto;
+   flex-basis: 25%;
+   border: 0 !important;
+   max-width: 400px;
+   min-width: 20vw;
+   width: max-content; 
+}
+.overlay {
+    color: rgb(255, 249, 249);
+    background-color: rgba(3, 0, 38,.5);
+    width:100% ;
+    position: absolute;
+    height:3.125rem;
+   bottom: 0;
+   display: flex;
+   align-items: center;
+ }
+ .bl{
+   color:rgb(25, 118, 210);
+   font-weight: bold;
+ }
+ .note>label{
+    font-size: 0.8125em !important;
+ }
+ .miniIsrael{
+    height:1.875rem !important;
+    margin:0.625rem;
+ }
+ .flexible{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: flex-start;
+ }
+ .flex-inline{
+    display: inline-block !important;
+ }
+ .judge-icon{
+   display: inline-block;
+ }
+ .media{
+   object-fit: contain;
+   position: relative;
+
+ }
+ .micro-icon{
+   position: absolute;
+   left: 0;
+   margin: 0.7em;
+ }
+ .MuiButton-tag{
+   color:#0d0b3c;
+ }
+ .top-tag{
+   position: absolute;
+    right: 0;
+    padding: 0.625rem;
+ }

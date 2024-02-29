@@ -1,0 +1,60 @@
+#navbar{
+    position: relative;
+    margin-top: 0.625rem;
+    margin-bottom: 0.625rem;
+    width: 8vw;
+    min-width: 4.25rem;
+    height: calc(100vh - 20px);
+    background-color: rgba(0, 0, 106, 0.336);
+    float: right;
+    color: white;
+}
+.sidenav {
+    background-color: rgba(2, 2, 156, 0.336);
+    vertical-align: middle;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 0.625rem;
+    width: 100%;
+  }
+.sidenav a {
+    padding: 0.5rem 0.5rem 0.5rem 2rem;
+    text-decoration: none;
+    font-size: 1.5625em;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  .navbar-footer{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  width: 90%;
+  }
+  .exitBtn{
+    padding: 0.313rem  !important;
+    min-width: 3.125rem  !important;
+    text-align: center !important;
+    border: 0 !important;
+    color: red !important;
+    font-size: 0.6875em !important;
+    background-color: rgba(2, 2, 156, 0.336) !important;
+  }
+  .navItem{
+    height: 7.14em;
+    font-size: 0.8em;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .inner-nav-item{
+    vertical-align: middle;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
